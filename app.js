@@ -25,3 +25,11 @@ function leerAmigos(lista){
 
     listaAmigos.innerHTML = textoLista; // Agrega el texto como elementos de la lista
 }
+
+function sortearAmigo(){
+    let resultado = document.getElementById('resultado'); // Selecciona el elemento para escribir el nombre
+    let indice = Math.floor(Math.random() * amigos.length); // Genera el indice aleatoriamente en base a la longitud
+    resultado.innerText = ''; // Deja vacio el texto de la etiqueta
+    console.log(amigos[indice]);
+    resultado.innerText = amigos[indice]; //Devuelve el nombre del amigo con el indice generado
+}
